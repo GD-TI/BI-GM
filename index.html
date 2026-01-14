@@ -161,12 +161,10 @@ async function carregarGupshup() {
 }
 
 /* ================= INIT ================= */
-carregarConsultasStatus();
 carregarGupshup();
 
 /* 🔄 AUTO REFRESH (1 minuto) */
 setInterval(() => {
-    carregarConsultasStatus();
     carregarGupshup();
 }, 60000);
 </script>
